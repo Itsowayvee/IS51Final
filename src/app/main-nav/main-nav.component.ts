@@ -11,6 +11,10 @@ export class MainNavComponent implements OnInit {
 
   constructor(private router: Router, private toastService: ToastService) { }
 
+  showAbout() {
+    this.toastService.showToast('sucess', 5000, 'This app was created by Vee Her. (c)');
+  }
+
   ngOnInit() {
   }
 
